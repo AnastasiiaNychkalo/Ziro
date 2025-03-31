@@ -1,0 +1,11 @@
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   font-family: 'Open Sans';
+   font-weight: 400;
+   .page {
+      flex: 1 1 auto;
+   }
+}

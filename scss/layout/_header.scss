@@ -1,0 +1,59 @@
+.header {
+   background: rgb(245, 247, 255);
+   &-container {
+      @include container();
+      @include row();
+      justify-content: space-between;
+      &-menu__list {
+         @include row();
+         width: 433px;
+         justify-content: space-around;
+         line-height: 24px;
+      }
+      &-form {
+         position: relative;
+         &__input {
+            width: 307px;
+            border-radius: 50px;
+            height: 35px;
+            padding-left: 15px;
+         }
+         &__button {
+            position: absolute;
+            left: 275px;
+            top: 3px;
+            width: 28px;
+            height: 28px;
+            border-radius: 50px;
+         }
+      }
+   }
+}
+
+.button-auth{
+   font-size: 16px;
+   &__login {
+   color: rgb(66, 56, 175);
+   }
+   &__sing-up {
+      color: rgb(39, 35, 35);
+   }
+}
+
+@media (max-width: 985px) {
+   .header-container {
+      @include column();
+      &__logo,
+      &__menu, 
+      &__form, 
+      &__button-auth {
+         margin-bottom: 15px;
+      }
+   }
+}
+
+@media (max-width: 425px) {
+   .header-container-menu__list {
+      @include column();
+   }
+}
