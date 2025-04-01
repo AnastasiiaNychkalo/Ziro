@@ -1,11 +1,10 @@
 .header {
    background: rgb(245, 247, 255);
    &-container {
-      @include container();
-      @include row();
+      @extend %row;
       justify-content: space-between;
       &-menu__list {
-         @include row();
+         @extend %row;
          width: 433px;
          justify-content: space-around;
          line-height: 24px;
