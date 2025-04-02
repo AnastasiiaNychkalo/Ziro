@@ -1,13 +1,13 @@
-@import "abstracts/variables";
-@import "abstracts/mixins";
-@import "abstracts/templates";
+@use "abstracts/variables" as *;
+@use "abstracts/mixins" as *;
+@use "abstracts/templates" as *;
 
-@import "base/nullstyle";
-@import "base/typography";
+@use "base/nullstyle" as *;
+@use "base/typography" as *;
 
-@import "base/global";
+@use "base/global" as *;
 
-@import "layout/header";
+@use "layout/header" as *;
 
 //@import "components/";
 
