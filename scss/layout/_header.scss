@@ -4,6 +4,7 @@
 
 .header {
    background: rgb(245, 247, 255);
+   padding: 23px 0 55px 0;
    &-container {
       @extend %row;
       justify-content: space-between;
