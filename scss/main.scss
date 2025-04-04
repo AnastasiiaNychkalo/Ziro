@@ -8,10 +8,11 @@
 @use "base/global" as *;
 
 @use "layout/header" as *;
+@use "layout/header" as *;
 
 //@import "components/";
 
-//@import "pages/";
+@use "pages/logos" as *;
 
 
 
