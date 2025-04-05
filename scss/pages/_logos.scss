@@ -1,0 +1,14 @@
+@use "../abstracts/templates" as *;
+
+.logos {
+   margin-bottom: 90px;
+   &-container {
+      @extend %row;
+      justify-content: space-between;
+      @media (max-width: 950px) {
+         gap: 30px;
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+   }
+}
