@@ -1,0 +1,54 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/templates" as *;
+@use "../abstracts/variables" as *;
+
+.intro {
+   background: rgb(245, 247, 255);
+   &-container {
+      @extend %row;
+      @media (max-width: 950px) {
+            @include column();
+      }
+      &-left{
+         &__title {
+         font-size: 45px;
+         line-height: 55px;
+         letter-spacing: 1.7px;
+         color: $color-title;
+         span {
+            color: $main-orange;
+         }
+         margin-bottom: 18px;
+         }
+         &__text {
+            letter-spacing: 1.2px;
+            color: $color-text;
+            margin-bottom: 30px;
+            line-height: 24px;
+         }
+         &-buttons {
+            &__discover {
+               @include button($radius: 6px);
+               margin-right: 34px;
+            }
+            &__demo {
+               font-size: 16px;
+               line-height: 62px;
+               letter-spacing: 1.2px;
+               color: rgb(0, 0, 0);
+               align-items: center;
+               img {
+                  margin-right: 10px;
+               }
+            }
+         }
+      }
+      &-right {
+         img {
+            @media (max-width: 950px) {
+               max-width: 100%;
+         }
+         }
+      }
+   }
+}
