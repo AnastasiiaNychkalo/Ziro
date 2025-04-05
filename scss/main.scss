@@ -8,9 +8,14 @@
 @use "base/global" as *;
 
 @use "layout/header" as *;
-@use "layout/header" as *;
-
-//@import "components/";
 
 @use "pages/intro" as *;
 @use "pages/logos" as *;
+@use "pages/how-it-works" as *;
+@use "pages/choose-us" as *;
+@use "pages/featured" as *;
+@use "pages/testimonials" as *;
+@use "pages/stats" as *;
+@use "pages/pricing" as *;
+
+@use "layout/footer" as *;
