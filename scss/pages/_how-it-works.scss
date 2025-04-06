@@ -1,0 +1,7 @@
+@use "../abstracts/templates" as *;
+
+.how-it-works {
+   &-container {
+      @extend %row;
+   }
+}
