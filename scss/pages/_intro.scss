@@ -4,6 +4,7 @@
 
 .intro {
    background: rgb(245, 247, 255);
+   margin-bottom: 32px;
    &-container {
       @extend %row;
       @media (max-width: 950px) {
