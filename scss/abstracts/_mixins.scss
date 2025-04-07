@@ -12,3 +12,10 @@
    font-size: 16px;
    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
 }
+
+@mixin chooseCardWrap($bgWrapCard: rgb(97, 86, 220)) {
+   width: 60px;
+   height: 60px;
+   border-radius: 7px;
+   background: $bgWrapCard url(../../img/choose-us/compass.svg) no-repeat center;
+}
