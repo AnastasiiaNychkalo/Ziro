@@ -1,4 +1,4 @@
-.logos-container, .intro-container, .header-container, .header-container-menu__list {
+.testimonial-container-respose, .logos-container, .intro-container, .header-container, .header-container-menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,4 +267,101 @@ h1, h2, h3, h4, h5, h6 {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.testimonial {
+  margin-bottom: 32px;
+}
+.testimonial-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.testimonial-container__title {
+  font-family: "Oswald";
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.5px;
+  color: rgb(53, 52, 52);
+  margin-bottom: 20px;
+}
+.testimonial-container__text {
+  max-width: 543px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: rgb(168, 168, 168);
+  margin-bottom: 68px;
+}
+@media (max-width: 770px) {
+  .testimonial-container-respose {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .testimonial-container-respose-photo__ava {
+    width: 100%;
+  }
+}
+.testimonial-container-respose-photo {
+  position: relative;
+  min-height: 350px;
+  margin-right: 50px;
+}
+.testimonial-container-respose-photo__symbol {
+  position: absolute;
+  top: 10px;
+  left: 60px;
+}
+.testimonial-container-respose-photo__circles {
+  position: absolute;
+  top: 240px;
+  right: 310px;
+}
+@media (max-width: 420px) {
+  .testimonial-container-respose-photo__circles {
+    right: 205px;
+    top: 160px;
+  }
+  .testimonial-container-respose-photo__symbol {
+    left: 40px;
+    top: -10px;
+  }
+}
+.testimonial-container-respose-content__name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: rgb(50, 50, 50);
+  margin-bottom: 13px;
+}
+.testimonial-container-respose-content__position {
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: rgb(134, 134, 134);
+  margin-bottom: 16px;
+}
+.testimonial-container-respose-content__grades {
+  text-align: end;
+  margin-bottom: 6px;
+}
+.testimonial-container-respose-content__text {
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: rgb(56, 56, 56);
+  margin-bottom: 39px;
+}
+.testimonial-container-respose-content__other-response {
+  text-align: end;
 }

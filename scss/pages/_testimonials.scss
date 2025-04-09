@@ -1,0 +1,89 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/templates" as *;
+@use "../abstracts/variables" as *;
+
+.testimonial {
+   margin-bottom: 32px;
+   &-container {
+      @include column();
+      align-items:center;
+      &__title {
+         font-family: 'Oswald';
+         font-size: 40px;
+         line-height: 50px;
+         letter-spacing: 0.5px;
+         color: $color-title;
+         margin-bottom: 20px;
+      }
+      &__text {
+         max-width: 543px;
+         line-height: 24px;
+         letter-spacing: 0.2px;
+         color: $color-text;
+         margin-bottom: 68px;
+      }
+      &-respose {
+         @extend %row;
+         @media (max-width: 770px) {
+            @include column();
+            &-photo__ava {
+               width: 100%;
+            }
+         }
+         &-photo {
+            position: relative;
+            min-height: 350px;
+            margin-right: 50px;
+            &__symbol {
+               position: absolute;
+               top: 10px;
+               left: 60px;
+            }
+            &__circles {
+               position: absolute;
+               top: 240px;
+               right: 310px;
+            }
+            @media (max-width: 420px) {
+               &__circles {
+                  right: 205px;
+                  top: 160px;
+               }
+               &__symbol {
+                  left: 40px;
+                  top: -10px;
+               }
+            }
+         }
+         &-content {
+            &__name {
+               font-weight: 600;
+               font-size: 20px;
+               line-height: 30px;
+               letter-spacing: 0.2px;
+               color: rgb(50, 50, 50);
+               margin-bottom: 13px;
+            }
+            &__position {
+               line-height: 24px;
+               letter-spacing: 0.2px;
+               color: rgb(134, 134, 134);
+               margin-bottom: 16px;
+            }
+            &__grades {
+               text-align: end;
+               margin-bottom: 6px;
+            }
+            &__text {
+               line-height: 24px;
+               letter-spacing: 0.2px;
+               color: rgb(56, 56, 56);
+               margin-bottom: 39px;
+            }
+            &__other-response {
+               text-align: end;
+            }
+         }
+      }
+   }
+}
