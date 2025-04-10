@@ -1,0 +1,141 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/templates" as *;
+
+.featured {
+   margin-bottom: 32px;
+   &-container {
+      @include column();
+      align-items:center;
+      &__title {
+         font-family: 'Oswald';
+         font-size: 40px;
+         line-height: 50px;
+         letter-spacing: 0.5px;
+         color: $color-title;
+         margin-bottom: 20px;
+      }
+      &__text {
+         line-height: 24px;
+         letter-spacing: 0.2px;
+         max-width: 543px;
+         color: $color-text;
+         margin-bottom: 80px;
+      }
+      &-slider {
+         @extend %row;
+         gap: 30px;
+         margin-bottom: 76px;
+         @media (max-width: 1360px) {
+            flex-wrap: wrap;
+            justify-content: center;
+         }
+         &__arrow {
+            width: 60px;
+            height: 60px;
+            border-radius: 7px;
+            &-left {
+               background-color: rgb(239, 96, 16);
+            }
+         }
+         &-card {
+            width: 380px;
+            height: 465px;
+            border-radius: 20px;
+            box-shadow: 0px 12px 30px 0px rgba(71, 71, 71, 0.15);
+            overflow: visible;
+            @include column();
+            justify-content: space-evenly;
+            padding: 0 20px;
+            @media (max-width: 375px) {
+               width: 300px;
+            }
+            &__buttton-points {
+               background-color: transparent;
+               text-align: end;
+            }
+            &__img {
+               width: 83px;
+               height: 83px;
+               align-self: center;
+            }
+            &__title {
+               font-size: 20px;
+               line-height: 50px;
+               letter-spacing: 0.2px;
+               color: rgb(50, 50, 50);
+               text-align: center;
+            }
+            &__subtitle {
+               line-height: 22px;
+               letter-spacing: 0.2px;
+               text-align: center;
+               color: rgb(66, 56, 175);
+            }
+            &__price {
+               font-size: 16px;
+               line-height: 50px;
+               letter-spacing: 0.2px;
+               color: rgb(50, 50, 50);
+               text-align: center;
+               img {
+                  vertical-align: sub;
+                  padding-right: 10px;
+               }
+               span {
+                  font-size: 14px;
+                  color: rgb(137, 137, 137);
+               }
+            }
+            &__address {
+               font-size: 16px;
+               line-height: 50px;
+               letter-spacing: 0.2px;
+               color: rgb(50, 50, 50);
+               text-align: center;
+               img {
+                  vertical-align: sub;
+                  padding-right: 10px;
+               }
+               a {
+                  font-size: 14px;
+                  color: rgb(137, 137, 137);
+                  padding-left: 15px;
+               }
+            }
+            &__wrap {
+               @extend %row;
+               justify-content: space-evenly;
+            }
+            &__heart {
+               width: 49px;
+               height: 49px;
+               background-color: rgb(249, 250, 255);
+               border-radius: 100px;
+               text-align: center;
+               align-content: center;
+            }
+            &__apply {
+               @include button();
+            }
+         }
+      }
+      &__button-view {
+         @include button();
+      }
+   }
+}
+
+#checked {
+   position: relative;
+   background: rgb(249, 250, 255);
+   top: -35px;
+}
+
+.orange-heart {
+   background-color: rgb(255, 92, 0);
+}
+
+.turquoise {
+   @include button ($bg-color: rgb(56, 49, 139, 0.33), $color: rgb(56, 49, 139));
+}
