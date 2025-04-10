@@ -1,5 +1,45 @@
+@use "../abstracts/mixins" as *;
+
 %row{
    display: flex;
    flex-direction: row;
    align-items: center;
+}
+
+%chooseCard {
+   width: 350px;
+   height: 254px;
+   @include column();
+   justify-content: space-evenly;
+   padding-left: 37px;
+   padding-right: 37px;
+   border-radius: 20px;
+   box-shadow: -1px 1px 20px 0px rgba(128, 128, 128, 0.1);
+   background: rgb(255, 255, 255);
+   @media (max-width: 375px) {
+      width: 300px;
+      padding-left: 5px;
+      padding-right: 5px;
+   }
+}
+
+%cardHover {
+   box-shadow: 0px 12px 30px 0px rgba(71, 71, 71, 0.15);
+   background: rgb(249, 250, 255);
+   position: relative;
+   top: -15px;
+}
+
+%chooseCardTitle {
+   color: rgb(50, 50, 50);
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 30px;
+   letter-spacing: 0.2px;
+}
+
+%chooseCardText {
+   color: rgb(143, 143, 143);
+   line-height: 22px;
+   letter-spacing: 1.2px;
 }
