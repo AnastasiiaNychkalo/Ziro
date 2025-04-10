@@ -3,6 +3,7 @@
 @use "../abstracts/mixins" as *;
 
 .how-it-works {
+   margin-bottom: 119px;
    &-container {
       @extend %row;
       gap: 20px;

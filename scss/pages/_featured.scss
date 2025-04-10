@@ -3,7 +3,7 @@
 @use "../abstracts/templates" as *;
 
 .featured {
-   margin-bottom: 32px;
+   margin-bottom: 119px;
    &-container {
       @include column();
       align-items:center;

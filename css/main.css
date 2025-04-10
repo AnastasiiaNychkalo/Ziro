@@ -308,7 +308,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logos {
-  margin-bottom: 90px;
+  margin-bottom: 66px;
 }
 .logos-container {
   -webkit-box-pack: justify;
@@ -326,6 +326,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.how-it-works {
+  margin-bottom: 119px;
+}
 .how-it-works-container {
   gap: 20px;
   -webkit-box-align: end;
@@ -501,7 +504,7 @@ h1, h2, h3, h4, h5, h6 {
   background: rgb(167, 62, 237) url(../../img/choose-us/compass.svg) no-repeat center;
 }
 .featured {
-  margin-bottom: 32px;
+  margin-bottom: 119px;
 }
 .featured-container {
   display: -webkit-box;
