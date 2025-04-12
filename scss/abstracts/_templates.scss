@@ -51,12 +51,14 @@
    font-size: 40px;
    line-height: 50px;
    letter-spacing: 0.5px;
+   margin-bottom: 20px;
 }
 
-%subtitle {
+%text {
    color: $color-text;
    font-family: 'Open Sans';
    font-size: 14px;
    line-height: 24px;
    letter-spacing: 0.2px;
+   max-width: 543px;
 }
