@@ -8,21 +8,11 @@
       @include column();
       align-items:center;
       &__title {
-         font-family: 'Oswald';
-         color: $color-title;
-         font-size: 40px;
-         line-height: 50px;
-         letter-spacing: 0.5px;
-         text-align: center;
-         margin-bottom: 20px;
+         @extend %title;
       }
       &__text {
-         line-height: 24px;
-         letter-spacing: 0.2px;
-         text-align: center;
+         @extend %text;
          margin-bottom: 60px;
-         color: $color-text;
-         max-width: 543px;
       }
       &-cards {
          @extend %row;

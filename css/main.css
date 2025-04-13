@@ -61,7 +61,7 @@
   letter-spacing: 1.2px;
 }
 
-.pricing-container__title {
+.pricing-container__title, .testimonial-container__title, .featured-container__title, .choose-us-container__title {
   color: rgb(53, 52, 52);
   font-family: "Oswald";
   font-size: 40px;
@@ -70,13 +70,14 @@
   margin-bottom: 20px;
 }
 
-.pricing-container__text {
+.pricing-container__text, .testimonial-container__text, .featured-container__text, .choose-us-container__text {
   color: rgb(168, 168, 168);
   font-family: "Open Sans";
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.2px;
   max-width: 543px;
+  text-align: center;
 }
 
 * {
@@ -478,22 +479,8 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
 }
-.choose-us-container__title {
-  font-family: "Oswald";
-  color: rgb(53, 52, 52);
-  font-size: 40px;
-  line-height: 50px;
-  letter-spacing: 0.5px;
-  text-align: center;
-  margin-bottom: 20px;
-}
 .choose-us-container__text {
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  text-align: center;
   margin-bottom: 60px;
-  color: rgb(168, 168, 168);
-  max-width: 543px;
 }
 .choose-us-container-cards {
   gap: 10px;
@@ -536,19 +523,7 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
 }
-.featured-container__title {
-  font-family: "Oswald";
-  font-size: 40px;
-  line-height: 50px;
-  letter-spacing: 0.5px;
-  color: rgb(53, 52, 52);
-  margin-bottom: 20px;
-}
 .featured-container__text {
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  max-width: 543px;
-  color: rgb(168, 168, 168);
   margin-bottom: 80px;
 }
 .featured-container-slider {
@@ -723,19 +698,7 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
   position: relative;
 }
-.testimonial-container__title {
-  font-family: "Oswald";
-  font-size: 40px;
-  line-height: 50px;
-  letter-spacing: 0.5px;
-  color: rgb(53, 52, 52);
-  margin-bottom: 20px;
-}
 .testimonial-container__text {
-  max-width: 543px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  color: rgb(168, 168, 168);
   margin-bottom: 68px;
 }
 @media (max-width: 770px) {
