@@ -1,0 +1,93 @@
+@use "../abstracts/templates" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.how-it-works {
+   margin-bottom: 119px;
+   &-container {
+      @extend %row;
+      gap: 20px;
+      align-items:flex-end;
+      @media (max-width: 999px) {
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+      &-left {
+         line-height: 50px;
+         letter-spacing: 1.5px;
+         &__subtitle {
+            color: $main-orange;
+            font-family: 'Oswald';
+            font-size: 12px;
+            
+         }
+         &__title {
+            font-family: 'Oswald';
+            font-size: 40px;
+            color: $color-title;
+         }
+      }
+   }
+}
+
+.spoilers {
+   @include column();
+   gap: 22px;
+   &__spoiler {
+      border-radius: 8px;
+      background-color: $color-spoiler;
+      &-header {
+         display: flex;
+         align-items: center;
+         cursor: pointer;
+         padding:0 22px;
+         justify-content: space-between;
+         &-text{
+            display: flex;
+            align-items: center;
+         }
+      }
+      &-number {
+         width: 30px;
+         height: 30px;
+         font-weight: 600;
+         color: rgb(148, 68, 201);
+         background-color: rgb(243, 224, 255);
+         border-radius:6px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin-right: 22px;
+
+      }
+      &-title {
+         font-size: 16px;
+         font-weight: 600;
+         color: rgb(50, 50, 50);
+      }
+      .arrow {
+         width: 16px;
+         height: 16px;
+         background: url('../../img/how-it-works/down-arrow.png') no-repeat center/contain;
+         transition: transform 0.3s ease;
+      }
+      &-content {
+         max-height: 0;
+         overflow: hidden;
+         transition: max-height 0.3s ease-in-out;
+         padding-top: 10px;
+      }
+      // Контент розкривається
+      &-checkbox:checked ~ &-content {
+         max-height: 200px;
+         padding: 10px 4px 21px 59px;
+         line-height: 22px;
+         font-size: 12px;
+         color: $color-text;
+      }
+      // Стрілка обертається
+      &-checkbox:checked ~ &-header .arrow {
+         transform: rotate(180deg);
+      }
+   }
+}
