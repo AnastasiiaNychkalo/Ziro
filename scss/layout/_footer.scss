@@ -1,0 +1,85 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/templates" as *;
+
+.footer {
+   border-radius: 30px 30px 0px 0px;
+   background: rgb(219, 226, 255);
+   &-container {
+      &-top {
+         @extend %row;
+         padding-top: 110px;
+         justify-content: space-between;
+         margin-bottom: 97px;
+         flex-wrap: wrap;
+         gap: 20px;
+         @media (max-width: 600px) {
+            justify-content: flex-start;
+         }
+         &__list {
+            a {
+               color: rgb(113, 113, 113);
+               font-size: 16px;
+               line-height: 36px;
+               letter-spacing: 0.2px;
+            }
+            >li:first-child {
+               font-family: 'Oswald';
+               font-size: 24px;
+               line-height: 26px;
+               a {
+                  color: $color-title;
+               }
+            }
+         }
+      }
+      &-bottom {
+         @extend %row;
+         justify-content: space-between;
+         margin-bottom: 19px;
+         flex-wrap: wrap;
+         border-top: 2px solid rgb(98, 91, 174);
+         padding-top: 20px;
+         &__logo {
+            span {
+               color: rgb(39, 38, 38);
+               font-size: 16px;
+               line-height: 18px;
+               letter-spacing: 0.5px;
+               text-transform: uppercase;
+            }
+         }
+         &__links {
+            @extend %row;
+            gap: 60px;
+            flex-wrap: wrap;
+            @media (max-width: 600px) {
+               gap: 20px;
+            }
+            a {
+               color: rgb(58, 46, 92);
+               font-size: 12px;
+               font-weight: 600;
+               line-height: 26px;
+               letter-spacing: 0.2px;
+            }
+         }
+         &__socials {
+            gap: 8px;
+            display: inline-flex;
+            a {
+               width: 28px;
+               height: 28px;
+               border-radius: 50%;
+               background-color:rgb(255, 255, 255);
+               display: flex;
+               justify-content: center;
+               align-items: center;
+            }
+            .twitter {
+               background: rgba(66, 56, 175, 0.81);
+            }
+         }
+      }
+   }
+}
