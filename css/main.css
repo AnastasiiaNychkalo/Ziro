@@ -1,4 +1,4 @@
-.stats-container, .testimonial-container-respose, .featured-container-slider, .featured-container-slider-card__wrap, .choose-us-container-cards, .how-it-works-container, .logos-container, .intro-container, .header-container, .header-container-menu__list {
+.pricing-container-cards, .stats-container, .testimonial-container-respose, .featured-container-slider, .featured-container-slider-card__wrap, .choose-us-container-cards, .how-it-works-container, .logos-container, .intro-container, .header-container, .header-container-menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,7 +39,7 @@
   }
 }
 
-.choose-us-container-cards-trusted:hover, .choose-us-container-cards-easy:hover, .choose-us-container-cards-faster:hover {
+.pricing-container-cards-card:hover, .choose-us-container-cards-trusted:hover, .choose-us-container-cards-easy:hover, .choose-us-container-cards-faster:hover {
   -webkit-box-shadow: 0px 12px 30px 0px rgba(71, 71, 71, 0.15);
           box-shadow: 0px 12px 30px 0px rgba(71, 71, 71, 0.15);
   background: rgb(249, 250, 255);
@@ -59,6 +59,24 @@
   color: rgb(143, 143, 143);
   line-height: 22px;
   letter-spacing: 1.2px;
+}
+
+.pricing-container__title {
+  color: rgb(53, 52, 52);
+  font-family: "Oswald";
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.pricing-container__text {
+  color: rgb(168, 168, 168);
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  max-width: 543px;
 }
 
 * {
@@ -851,4 +869,91 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.2px;
+}
+
+.pricing {
+  margin-bottom: 119px;
+}
+.pricing-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pricing-container__text {
+  margin-bottom: 75px;
+}
+.pricing-container-cards {
+  gap: 25px;
+}
+.pricing-container-cards-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 350px;
+  height: 537px;
+  border-radius: 20px;
+  -webkit-box-shadow: -1px 1px 20px 0px rgba(128, 128, 128, 0.1);
+          box-shadow: -1px 1px 20px 0px rgba(128, 128, 128, 0.1);
+  background: rgb(255, 255, 255);
+}
+.pricing-container-cards-card__title {
+  color: rgb(66, 56, 175);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+}
+.pricing-container-cards-card__price {
+  color: rgb(53, 52, 52);
+  font-family: "Oswald";
+  font-size: 45px;
+  line-height: 55px;
+  letter-spacing: 0.7px;
+}
+.pricing-container-cards-card__text {
+  color: rgb(138, 134, 185);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+.pricing-container-cards-card__list {
+  color: rgb(168, 168, 168);
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+.pricing-container-cards-card li:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 11px;
+  background-image: url(../../img/pricing/check-mark.svg);
+}
+.pricing-container-cards-card__button {
+  width: 152px;
+  background-color: rgb(189, 187, 217);
+  border-radius: 47px;
+  height: 44px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  -webkit-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
 }
