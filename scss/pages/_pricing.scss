@@ -1,0 +1,72 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/templates" as *;
+
+.pricing {
+   margin-bottom: 119px;
+   &-container {
+      @include column();
+      align-items: center;
+      &__title {
+         @extend %title;
+      }
+      &__text {
+         @extend %text;
+         margin-bottom: 75px;
+      }
+      &-cards {
+         @extend %row;
+         gap: 25px;
+         &-card {
+            @include column();
+            justify-content: space-evenly;
+            align-items: center;
+            width: 350px;
+            height: 537px;
+            border-radius: 20px;
+            box-shadow: -1px 1px 20px 0px rgba(128, 128, 128, 0.1);
+            background: rgb(255, 255, 255);
+            &:hover {
+               @extend %cardHover;
+            }
+            &__title {
+               color: rgb(66, 56, 175);
+               font-size: 20px;
+               font-weight: 600;
+               line-height: 30px;
+               letter-spacing: 0.2px;
+            }
+            &__price {
+               color: $color-title;
+               font-family: 'Oswald';
+               font-size: 45px;
+               line-height: 55px;
+               letter-spacing: 0.7px;
+            }
+            &__text {
+               color: rgb(138, 134, 185);
+               font-size: 16px;
+               line-height: 24px;
+               letter-spacing: 0.2px;
+            }
+            &__list {
+               color: $color-text;
+               font-size: 14px;
+               line-height: 24px;
+               letter-spacing: 0.2px;
+            }
+            li:before {
+               content: '';
+               display: inline-block;
+               width: 16px;
+               height: 16px;
+               margin-right: 11px;
+               background-image: url(../../img/pricing/check-mark.svg);
+            }
+            &__button {
+               @include button($bg-color:rgb(189, 187, 217));
+            }
+         }
+      }
+   }
+}

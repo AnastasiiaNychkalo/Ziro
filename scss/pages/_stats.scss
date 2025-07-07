@@ -1,0 +1,30 @@
+@use "../abstracts/templates" as *;
+
+.stats {
+   margin-bottom: 119px;
+   &-container {
+      border-radius: 30px;
+      background: rgb(206, 213, 244);
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      gap: 20px;
+      @extend %row;
+      &-content {
+         padding: 74px 0;
+         &__number {
+            color: rgb(88, 78, 198);
+            font-family: Oswald;
+            font-size: 40px;
+            line-height: 50px;
+            letter-spacing: 0.5px;
+            margin-bottom: 14px;
+         }
+         &__text {
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+         }
+      }
+   }
+}
